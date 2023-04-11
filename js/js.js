@@ -35,6 +35,7 @@ function ocultarForm(){
     gi('txtModelo_vehiculo').value = '';
     gi('tztFecha_atencion').value = '';
     gi('txtCosto').value = '';
+    gi('txtCategoria').value = '';
     gi('txtMateriales_utilizados').value = '';
     gi('txtMecanico').value = '';
     gi("txtRut_mecanico") .value='none';
