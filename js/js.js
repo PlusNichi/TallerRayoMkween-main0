@@ -1,11 +1,17 @@
 class contacto {
     constructor() {
-        this.nombre = "";
-        this.apellido = "";
-        this.edad = "";
-        this.fecha_nacimiento = "";
-        this.fondo = "";
-        this.correo = "";
+        this.trabajo = "";
+        this.diagnostico = "";
+        this.imagen_modelo = "";
+        this.modelo_vehiculo = "";
+        this.fecha_atencion = "";
+        this.costo = "";
+        this.materiales_utilizados = "";
+        this.mecanico = "";
+        this.rut_mecanico = "";
+        this.nombre_propietario = "";
+        this.rut_propietario = "";
+        this.garantia = "";
 
     }
 }
@@ -26,7 +32,7 @@ function ocultarForm(){
     gi('txtDiagnostico').value = '';
     gi('imgImagen_modelo').value = '';
     gi('txtModelo_vehiculo').value = '';
-    gi('dateFecha_atencion').value = '';
+    gi('tztFecha_atencion').value = '';
     gi('txtCosto').value = '';
     gi('txtMateriales_utilizados').value = '';
     gi('txtMecanico').value = '';
