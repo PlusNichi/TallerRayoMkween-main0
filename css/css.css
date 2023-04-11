@@ -59,3 +59,19 @@ header{
     font-weight: bold;
     background-color: #2ACBFF;
 }
+
+.btn{
+    position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	background: #005cd5;
+	line-height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	transition: .5s;
+}
+
+
