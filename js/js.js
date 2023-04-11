@@ -18,18 +18,24 @@ function gi(id){
 
 function agregarAtencion(){
     gi("divFormulario").style.display='inline';
-    gi('txtNombre').focus();
+    gi('txtTrabajo').focus();
 }
 
 function ocultarForm(){
-    gi('txtNombre').value = '';
-    gi('txtApellido').value = '';
-    gi('txtEdad').value = '';
-    gi('txtFecha_nacimiento').value = '';
-    gi('txtFondo').value = '';
-    gi('txtCorreo').value = '';
-    gi('txtId').value = '';
-    gi("divFormulario") .style.display='none';
+    gi('txtTrabajo').value = '';
+    gi('txtDiagnostico').value = '';
+    gi('imgImagen_modelo').value = '';
+    gi('txtModelo_vehiculo').value = '';
+    gi('dateFecha_atencion').value = '';
+    gi('txtCosto').value = '';
+    gi('txtMateriales_utilizados').value = '';
+    gi('txtMecanico').value = '';
+    gi("txtRut_mecanico") .value='none';
+    gi("txtNombre_propietario") .value='none';
+    gi("txtRut_propietario") .value='none';
+    gi("txtGarantia") .value='none';
+    gi("divFormulario").style.display='none';
+
 }
 
 function guardar(){
