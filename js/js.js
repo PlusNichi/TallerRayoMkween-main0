@@ -52,7 +52,7 @@ function guardar(){
         contactos[contactos.length] = con;
     }
     ocultarForm();
-    mostrarContactos();
+    mostrarEnvioAtencion();
 }
 
 function borrarConfirmar(id_contacto){
