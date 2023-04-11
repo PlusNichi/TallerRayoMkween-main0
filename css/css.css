@@ -61,51 +61,6 @@ header{
 }
 
 
-input {
-	outline: none;
-	box-sizing: border-box;
-	height: 60px;
-	width: 0px;
-	padding: 0 20px;
-	color: rgb(0, 255, 255);
-	border-radius: 50px;
-	font-size: 20px;
-	border: 1px solid #00c3d5;
-	transition: all .7s ease;
-}
-
-.btn{
-    position: absolute;
-	right: 0px;
-	top: 0px;
-	width: 80px;
-	height: 80px;
-	background: #00bcd5;
-	line-height: 80px;
-	border-radius: 50%;
-	text-align: center;
-	cursor: pointer;
-	transition: .5s;
-}
-
-.btn i {
-	font-size: 25px;
-	color: white;
-	line-height: 80px;
-	transition: all .7s ease;
-}
-
-.container:hover input {
-	width: 350px;
-}
-
-.container:hover i{
-	transform: rotate(-360deg);
-}
-
-.btn:hover{
-	background: #00a3cc;
-}
 
 
 
