@@ -137,9 +137,23 @@ function mostrarAtenciones(){
         "trabajo: " + con.trabajo + "<br/>" +
         "diagnostico: " + con.diagnostico + "<br/>" +
         "imagen_modelo: " + con.imagen_modelo + "<br/>" +
-        "fecha_nacimiento: " + con.fecha_nacimiento + "<br/>" +
-        "fondo: " + con.fondo + "<br/>" +
-        "correo: " + con.correo + "<br/>" +
+        "modelo_vehiculo: " + con.modelo_vehiculo + "<br/>" +
+        "fecha_atencion: " + con.fecha_atencion + "<br/>" +
+        "costo: " + con.costo + "<br/>" +
+        "categoria: " + con.categoria + "<br/>" +
+        "materiales_utilizados: " + con.materiales_utilizados + "<br/>" +
+        "mecanico: " + con.mecanico + "<br/>" +
+        "rut_mecanico: " + con.rut_mecanico + "<br/>" +
+        "nombre_propietario: " + con.nombre_propietario + "<br/>" +
+        "rut_propietario: " + con.rut_propietario + "<br/>" +
+        "garantia: " + con.garantia + "<br/>" +
+
+
+
+
+
+
+
         "<button onclick = 'editar ("+x+")' >Editar</button><button onclick = 'borrar ("+x+")'>Borrar</button>";
         gi('todosLosContactos').appendChild(div);
     }
