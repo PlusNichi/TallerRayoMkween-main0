@@ -62,23 +62,28 @@ function guardar(){
         contactos[id].nombre_propietario = gi('txtNombre_propietario').value;
         contactos[id].rut_propietario = gi('txtNombre_propietario').value;
         contactos[id].garantia = gi('txtGarantia').value;
-
-
-
-        
-
-
-
-
-        
+   
     } else {
         con = new contacto();
         con.trabajo = gi('txtTrabajo').value;
         con.diagnostico = gi('txtDiagnostico').value;
-        con.edad = gi('txtEdad').value;
-        con.fecha_nacimiento = gi('txtFecha_nacimiento').value;
-        con.fondo = gi('txtFondo').value;
-        con.correo = gi('txtCorreo').value;
+        con.imagen_modelo = gi('txtImagen_modelo').value;
+        con.modelo_vehiculo = gi('txtModelo_vehiculo').value;
+        con.fecha_atencion = gi('txtFecha_atencion').value;
+        con.costo = gi('txtCosto').value;
+        con.categoria = gi('txtCategoria').value;
+        con.materiales_utilizados = gi('txtMateriales_utilizados').value;
+        con.mecanico = gi('txtMecanico').value;
+        con.rut_mecanico = gi('txtRut_mecanico').value;
+        con.nombre_propietario = gi('txtNombre_propietario').value;
+        con.rut_propietario = gi('txtRut_propietario').value;
+        con.garantia = gi('txtGarantia').value;
+
+
+
+
+
+
         contactos[contactos.length] = con;
     }
     ocultarForm();
