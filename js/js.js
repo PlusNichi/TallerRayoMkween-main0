@@ -16,7 +16,7 @@ function gi(id){
 }
 
 
-function agregarContacto(){
+function agregarAtencion(){
     gi("divFormulario").style.display='inline';
     gi('txtNombre').focus();
 }
