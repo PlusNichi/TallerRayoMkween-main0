@@ -38,11 +38,11 @@ function ocultarForm(){
     gi('txtCategoria').value = '';
     gi('txtMateriales_utilizados').value = '';
     gi('txtMecanico').value = '';
-    gi("txtRut_mecanico") .value='none';
-    gi("txtNombre_propietario") .value='none';
-    gi("txtRut_propietario") .value='none';
-    gi("txtGarantia") .value='none';
-    gi("divFormulario").style.display='none';
+    gi("txtRut_mecanico") .value='';
+    gi("txtNombre_propietario") .value='';
+    gi("txtRut_propietario") .value='';
+    gi("txtGarantia") .value='';
+    gi("divFormulario").style.display='';
 
 }
 
