@@ -1,4 +1,4 @@
-class contacto {
+class atencion {
     constructor() {
         this.trabajo = "";
         this.diagnostico = "";
@@ -16,7 +16,7 @@ class contacto {
 
     }
 }
-var contactos = new Array();
+var atenciones = new Array();
 
 function gi(id){
     return document.getElementById(id);
@@ -49,19 +49,19 @@ function ocultarForm(){
 function guardar(){
     var id = gi('txtId').value;
     if (id.length > 0) {
-        contactos[id].trabajo = gi('txtTrabajo').value;
-        contactos[id].diagnostico = gi('txtDiagnostico').value;
-        contactos[id].imagen_modelo = gi('txtImagen_modelo').value;
-        contactos[id].modelo_vehiculo = gi('txtModelo_vehiculo').value;
-        contactos[id].fecha_atencion = gi('txtFecha_atencion').value;
-        contactos[id].costo = gi('txtCosto').value;
-        contactos[id].categoria = gi('txtCategoria').value;
-        contactos[id].materiales_utilizados = gi('txtMateriales_utilizados').value;
-        contactos[id].mecanico = gi('txtMecanico').value;
-        contactos[id].rut_mecanico = gi('txtRut_mecanico').value;
-        contactos[id].nombre_propietario = gi('txtNombre_propietario').value;
-        contactos[id].rut_propietario = gi('txtNombre_propietario').value;
-        contactos[id].garantia = gi('txtGarantia').value;
+        atenciones[id].trabajo = gi('txtTrabajo').value;
+        atenciones[id].diagnostico = gi('txtDiagnostico').value;
+        atenciones[id].imagen_modelo = gi('txtImagen_modelo').value;
+        atenciones[id].modelo_vehiculo = gi('txtModelo_vehiculo').value;
+        atenciones[id].fecha_atencion = gi('txtFecha_atencion').value;
+        atenciones[id].costo = gi('txtCosto').value;
+        atenciones[id].categoria = gi('txtCategoria').value;
+        atenciones[id].materiales_utilizados = gi('txtMateriales_utilizados').value;
+        atenciones[id].mecanico = gi('txtMecanico').value;
+        atenciones[id].rut_mecanico = gi('txtRut_mecanico').value;
+        atenciones[id].nombre_propietario = gi('txtNombre_propietario').value;
+        atenciones[id].rut_propietario = gi('txtNombre_propietario').value;
+        atenciones[id].garantia = gi('txtGarantia').value;
    
     } else {
         con = new contacto();
