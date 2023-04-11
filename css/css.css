@@ -88,4 +88,16 @@ input {
 	transition: .5s;
 }
 
+.btn i {
+	font-size: 25px;
+	color: white;
+	line-height: 80px;
+	transition: all .7s ease;
+}
+
+.container:hover input {
+	width: 350px;
+}
+
+
 
