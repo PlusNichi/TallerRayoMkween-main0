@@ -6,6 +6,7 @@ class contacto {
         this.modelo_vehiculo = "";
         this.fecha_atencion = "";
         this.costo = "";
+        this.categoria = "";
         this.materiales_utilizados = "";
         this.mecanico = "";
         this.rut_mecanico = "";
