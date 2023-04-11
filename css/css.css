@@ -52,6 +52,33 @@ header{
      list-style: none;
 
  }
+
+ .lario2{
+    display: flex;
+     justify-content: center;
+     padding: 25px;
+     margin:auto;
+     background-color: #2787c7;
+     color: white;
+     list-style: none;
+
+ }
+
+.lario3{
+    display: flex;
+     justify-content: center;
+     padding: 25px;
+     margin:auto;
+     background-color: #2787c7;
+     color: white;
+     list-style: none;
+     flex-direction: column;
+ }
+
+ 
+ label{
+    width: 30vw;
+ }
 .cajaTexto *{
     background-color: #2ACBFF !important;
 }
