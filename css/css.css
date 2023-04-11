@@ -60,6 +60,20 @@ header{
     background-color: #2ACBFF;
 }
 
+
+input {
+	outline: none;
+	box-sizing: border-box;
+	height: 60px;
+	width: 0px;
+	padding: 0 20px;
+	color: rgb(0, 255, 255);
+	border-radius: 50px;
+	font-size: 20px;
+	border: 1px solid #D50000;
+	transition: all .7s ease;
+}
+
 .btn{
     position: absolute;
 	right: 0px;
