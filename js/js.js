@@ -49,16 +49,32 @@ function ocultarForm(){
 function guardar(){
     var id = gi('txtId').value;
     if (id.length > 0) {
-        contactos[id].nombre = gi('txtNombre').value;
-        contactos[id].apellido = gi('txtApellido').value;
-        contactos[id].edad = gi('txtEdad').value;
-        contactos[id].fecha_nacimiento = gi('txtFecha_nacimiento').value;
-        contactos[id].fondo = gi('txtFondo').value;
-        contactos[id].correo = gi('txtCorreo').value;
+        contactos[id].trabajo = gi('txtTrabajo').value;
+        contactos[id].diagnostico = gi('txtDiagnostico').value;
+        contactos[id].imagen_modelo = gi('txtImagen_modelo').value;
+        contactos[id].modelo_vehiculo = gi('txtModelo_vehiculo').value;
+        contactos[id].fecha_atencion = gi('txtFecha_atencion').value;
+        contactos[id].costo = gi('txtCosto').value;
+        contactos[id].categoria = gi('txtCategoria').value;
+        contactos[id].materiales_utilizados = gi('txtMateriales_utilizados').value;
+        contactos[id].mecanico = gi('txtMecanico').value;
+        contactos[id].rut_mecanico = gi('txtRut_mecanico').value;
+        contactos[id].nombre_propietario = gi('txtNombre_propietario').value;
+        contactos[id].rut_propietario = gi('txtNombre_propietario').value;
+        contactos[id].garantia = gi('txtGarantia').value;
+
+
+
+        
+
+
+
+
+        
     } else {
         con = new contacto();
-        con.nombre = gi('txtNombre').value;
-        con.apellido = gi('txtApellido').value;
+        con.trabajo = gi('txtTrabajo').value;
+        con.diagnostico = gi('txtDiagnostico').value;
         con.edad = gi('txtEdad').value;
         con.fecha_nacimiento = gi('txtFecha_nacimiento').value;
         con.fondo = gi('txtFondo').value;
