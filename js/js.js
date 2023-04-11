@@ -42,7 +42,7 @@ function ocultarForm(){
     gi("txtNombre_propietario") .value='';
     gi("txtRut_propietario") .value='';
     gi("txtGarantia") .value='';
-    gi("divFormulario").style.display='';
+    gi("divFormulario").style.display='none';
 
 }
 
