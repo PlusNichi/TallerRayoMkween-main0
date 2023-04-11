@@ -84,50 +84,59 @@ function guardar(){
     mostrarEnvioAtencion();
 }
 
-function borrarConfirmar(id_contacto){
+function borrarConfirmar(id_atencion){
     if(confirm("¿Esta seguro que quiere borrar este contacto?")){
-        borrar(id_contacto);
+        borrar(id_atencion);
     }
 }
 
-function borrar(id_contacto){
+function borrar(id_atencion){
     if(confirm("¿Esta seguro que quiere borrar este contacto?")){
-        contactos.splice(id_contacto,1);
+        contactos.splice(id_atencion,1);
         // newCon = newArray();
-        // for(x=0; x<contactos.length; x++){
-        //     newCon[newCon.length] = contactos[x];
+        // for(x=0; x<atenciones.length; x++){
+        //     newCon[newCon.length] = atenciones[x];
         // }
     }
     // contactos = newCon;
-    mostrarContactos();
+    mostrarAtenciones();
 }
 
-function editar(id_contacto){
-   con = contactos[id_contacto];
+function editar(id_atencion){
+   con = atenciones[id_atencion];
    // borrar(id_contacto);
-   agregarContacto();
+   agregarAtencion();
    // gi("btn_save").classList.add("d-none");
    // gi("btn_update").classList.remove("d-none");
-   gi('txtNombre').value = con.nombre;
-   gi('txtApellido').value = con.apellido;
-   gi('txtEdad').value = con.edad;
-   gi('txtFecha_nacimiento').value = con.fecha_nacimiento;
-   gi('txtFondo').value = con.fondo;
-   gi('txtCorreo').value = con.correo;
-   gi('txtId').value = id_contacto;
+   gi('txtTrabajo').value = con.trabajo;
+   gi('txtDiagnostico').value = con.diagnostico;
+   gi('txtImagen_modelo').value = con.imagen_modelo;
+   gi('txtModelo_vehiculo').value = con.modelo_vehiculo;
+   gi('txtFecha_atencion').value = con.fecha_atencion;
+   gi('txtCosto').value = con.costo;
+   gi('txtCategoria').value = con.categoria;
+   gi('txtMateriales_utlizados').value = con.materiales_utilizados;
+   gi('txtCategoria').value = con.categoria;
+   gi('txtMateriales_utilizados').value = con.materiales_utilizados;
+   gi('txtMecanico').value = con.mecanico;
+   gi('txtRut_mecanico').value = con.rut_mecanico;
+   gi('txtNombre_propietario').value = con.nombre_propietario;
+   gi('txtRut_propietario').value = con.rut_propietario;
+   gi('txtGarantia').value = con.garantia;
+
 }
 
 
-function mostrarContactos(){
-    gi('todosLosContactos').innerHTML = '';
+function mostrarAtenciones(){
+    gi('todosLasAtenciones').innerHTML = '';
     for(x=0; x<contactos.length; x++){
         con = contactos[x];
         div = document.createElement('div');
         div.setAttribute('class','contacto');
         div.innerHTML = 
-        "nombre: " + con.nombre + "<br/>" +
-        "apellido: " + con.apellido + "<br/>" +
-        "edad: " + con.edad + "<br/>" +
+        "trabajo: " + con.trabajo + "<br/>" +
+        "diagnostico: " + con.diagnostico + "<br/>" +
+        "imagen_modelo: " + con.imagen_modelo + "<br/>" +
         "fecha_nacimiento: " + con.fecha_nacimiento + "<br/>" +
         "fondo: " + con.fondo + "<br/>" +
         "correo: " + con.correo + "<br/>" +
