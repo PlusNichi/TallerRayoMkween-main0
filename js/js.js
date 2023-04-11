@@ -78,7 +78,7 @@ function guardar(){
         con.nombre_propietario = gi('txtNombre_propietario').value;
         con.rut_propietario = gi('txtRut_propietario').value;
         con.garantia = gi('txtGarantia').value;
-        contactos[contactos.length] = con;
+        atenciones[atenciones.length] = con;
     }
     ocultarForm();
     mostrarEnvioAtencion();
