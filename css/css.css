@@ -4,6 +4,10 @@ header{
     font-size: 25cpx;
     background-color: #2ACBFF;
  }
+
+ .bow{
+    background-color: #2787c7;
+ }
  a{
      color: white;
  }
@@ -74,6 +78,20 @@ header{
      list-style: none;
      flex-direction: column;
  }
+
+ .lario3 div{
+    text-align: center;
+ }
+
+ .lario3 a{
+    background-color: white;
+    color:#2787c7;
+    width: 70vw;
+    background-clip: padding-box;
+    max-width: 70vw;
+    padding: 20px;
+ }
+
 
  
  label{
