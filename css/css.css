@@ -69,9 +69,11 @@ header{
     border-collapse: collapse;
     align-items: center;
     min-width: 100%;
+    overflow-x: hidden;
     color:#2ACBFF;
     font-size: 70%;
  }
+ 
 
  .lario2{
     display: flex;
@@ -93,7 +95,6 @@ header{
      color: white;
      list-style: none;
      flex-direction: column;
-     font-size:0.9rem;
  }
 
  .lario3 div{
@@ -118,8 +119,6 @@ header{
      text-transform: uppercase;
  }
 
-
- 
  label{
     width: 30vw;
  }
