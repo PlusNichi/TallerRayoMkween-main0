@@ -147,15 +147,9 @@ function mostrarAtenciones(){
         "nombre_propietario: " + con.nombre_propietario + "<br/>" +
         "rut_propietario: " + con.rut_propietario + "<br/>" +
         "garantia: " + con.garantia + "<br/>" +
-
-
-
-
-
-
-
+        
         "<button onclick = 'editar ("+x+")' >Editar</button><button onclick = 'borrar ("+x+")'>Borrar</button>";
-        gi('todosLosContactos').appendChild(div);
+        gi('todosLasAtenciones').appendChild(div);
     }
 
 }
