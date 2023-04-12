@@ -1,21 +1,37 @@
 header{
-    color: White;
+    color: #2ACBFF;
     text-align: center;
-    font-size: 25cpx;
-    background-color: #2ACBFF;
+    font-size: 35px;
+    
  }
 
  .bow{
-    background-color: #2787c7;
+    background-color:#2ACBFF;
  }
+ .cajaTexto *{
+    background-color: white !important;
+}
+ 
  a{
-     color: white;
+     color: #2ACBFF;
+ 
  }
+ 
  .carousel{
      width: 100%;
      height: auto;
      
  }
+
+ .navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+ }
+ 
  .collapse:not(.show) {
     display: none;
 }
@@ -35,26 +51,26 @@ header{
   max-height: 500px;
 }
 
-
  .container{
      display: flex;
+     margin-top: 55px;
      justify-content: center;
      padding: 25px;
      border-collapse: collapse;
      align-items: center;
-     min-width: 109vw;
-     background-color: #2ACBFF;
+     
+    
      
  }
  .lario{
     display: flex;
-     justify-content: center;
-     padding: 25px;
-     margin:auto;
-     background-color: #2787c7;
-     color: white;
-     list-style: none;
-
+    justify-content: center;
+    padding: 25px;
+    border-collapse: collapse;
+    align-items: center;
+    min-width: 100%;
+    color:#2ACBFF;
+    font-size: 70%;
  }
 
  .lario2{
@@ -62,7 +78,7 @@ header{
      justify-content: center;
      padding: 25px;
      margin:auto;
-     background-color: #2787c7;
+     background-color: #2ACBFF;
      color: white;
      list-style: none;
 
@@ -73,10 +89,11 @@ header{
      justify-content: center;
      padding: 25px;
      margin:auto;
-     background-color: #2787c7;
+     background-color:#2ACBFF;
      color: white;
      list-style: none;
      flex-direction: column;
+     font-size:0.9rem;
  }
 
  .lario3 div{
@@ -92,24 +109,34 @@ header{
     padding: 20px;
  }
 
+ .lario * {
+    background-color:white !important;
+ }
+ .lario .btn{
+     
+     font-family: "montserrat", sans-serif;
+     text-transform: uppercase;
+ }
+
 
  
  label{
     width: 30vw;
  }
-.cajaTexto *{
-    background-color: #2ACBFF !important;
-}
- .container * {
-   background-color: #2ACBFF !important;
-}
-.btn{
-    color: white;
-    font-family: "montserrat", sans-serif;
-    text-transform: uppercase;
+
+ .cajaTexto *{
+    background-color: white !important;
+
 }
  .btn:hover{
     font-weight: bold;
-    
-    
+    background-color: #2787c7;
+    color:#a0fcff;
 }
+
+
+.container-imag{
+    text-align: right;
+}
+
+
