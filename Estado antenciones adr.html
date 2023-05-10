@@ -26,52 +26,8 @@
       }
       </style>
      <div class="lario3">
-      <table class="table table-bordered table-striped" style="background-color: white; color: #1b539c;">
-        <thead>
-            <tr>
-            <th scope="col">Contexto de la atencion</th>
-            <th scope="col">Estado Atencion</th>
-            <th scope="col">Tipo opcion</th>
-            <th scope="col">Tiempo max. de resolucion</th>
-            <th scope="col">Justificacion</th>
-            </tr>
-
-          </thead>
-            
-          <tbody>
-            <tr scope="row"></tr>
-            <td>Cambio de pintura a Kia Morning</td>
-            <td>Aceptada</td>
-            <td>Marca</td>
-            <td>2 dias habiles</td>
-            <td></td>
-            </tr>
-            <tr scope="row"></tr>
-            <td>Solicitud para cambiar carroceria a un vehiculo 4x4</td>
-            <td>Rechazada</td>
-            <td>Mecanico</td>
-            <td>1 semana</td>
-            <td>No se muestra una imagen del vehiculo</td>
-            </tr>
-            <tr scope="row"></tr>
-            <td>Cliente quiere comprar un nuevo modelo de auto</td>
-            <td>Aceptada</td>
-            <td>Modelo</td>
-            <td>7 dias habiles</td>
-            <td></td>
-            </tr>
-            <tr scope="row"></tr>
-            <td>Nueva pintura a Chevrolet Camaro</td>
-            <td>Rechazada</td>
-            <td>Modelo</td>
-            <td>1 semana</td>
-            <td>No se especifica el color al que se desea cambiar</td>
-
-            </tr>
-
-
+      <table class="table table-bordered table-striped" id="tabla1" style="background-color: white; color: #1b539c;">
         
-        </tbody>
       </table>
 
      </div>
@@ -84,6 +40,28 @@
 
 
     </div>
+
+    <script>
+      fetch("json/jj.json")
+        .then(response => response.json())
+        .then(data => {
+          const mecanicoEspecifico = data[0].mecanicos[0];
+
+
+          let cad = '<tr><th>Contexto de la atencion</th><th>Estado de atencion</th><th>Tipo de atencion</th><th>Dias Habiles de operacion</th><th>Justificacion</th></tr>';
+          for (let atencion of mecanicoEspecifico.atenciones) {
+            cad += `<tr><td>${atencion.detalle}</td>
+                        <td>${atencion.estado_atencion}</td>
+                        <td>${atencion.tipo_opcion}</td>
+                        <td>${atencion.dias_resolucion}</td>
+                        <td>${atencion.justificacion}</td></tr>`;
+          }
+            
+            
+
+          document.getElementById("tabla1").innerHTML = cad;
+        });
+    </script>
 
 
   </body>

@@ -15,84 +15,58 @@
 
   </head>
   <body class="bow">
-    <div class="cajaTexto">
+     <div class="cajaTexto">
       <h2><header>Estado de atenciones</header></h2>
      </div>
      <style>
       @media (max-width: 767px) {
-        .container {
+        .lario3 {
           font-size: 9px;
         }
       }
       </style>
-     <div class="container">
-      <table class="table table-bordered table-striped" style="background-color: white; color: #1b539c;">
-        <thead>
-            <tr>
-            <th scope="col">Contexto de la atencion</th>
-            <th scope="col">Estado Atencion</th>
-            <th scope="col">Tipo opcion</th>
-            <th scope="col">Tiempo max. de resolucion</th>
-            <th scope="col">Justificacion</th>
-            </tr>
-
-          </thead>
-            
-          <tbody>
-            <tr scope="row"></tr>
-            <td>Remodelacion vehiculo 4x4</td>
-            <td>Rechazada</td>
-            <td>Modelo</td>
-            <td>5 dias habiles</td>
-            <td>El taller no hace remodelaciones de vehiculos</td>
-            </tr>
-            <tr scope="row"></tr>
-            <td>Solicitud para cambio de neumatico derecho trasero a Hyundai Accent</td>
-            <td>Acepatada</td>
-            <td>Mecanico</td>
-            <td>5 dias habiles</td>
-            <td></td>
-            </tr>
-
-            <tr scope="row"></tr>
-            <td>Cliente solicita cambio de aceite a su vehiculo</td>
-            <td>Rechazada</td>
-            <td>Modelo</td>
-            <td>4 dias habiles</td>
-            <td>Demasiadas faltas de ortografia en la solicitud</td>
-            </tr>
-
-            <tr scope="row"></tr>
-            <td>Nueva pintura a Dodge Charger</td>
-            <td>Aceptada</td>
-            <td>Modelo</td>
-            <td>1 semana</td>
-            <td></td>
-
-            </tr>
-
-
+     <div class="lario3">
+      <table class="table table-bordered table-striped" id="tabla1" style="background-color: white; color: #1b539c;">
         
-        </tbody>
       </table>
 
      </div>
 
-     <div class="buttons">
-      <center><div class="nav-item">
-          <a href="cuenta-angel d revilla.html" style="color: white;" type="button" class="login-button btn btn-xs btn-default" title="Log in">
-          <span class="glyphicon glyphicon-log-in"></span> Volver </a></center>
-     </div>
+      <div class="buttons">
+        <center><div class="nav-item">
+            <a href="cuenta-gonzalo peñaloza.html" style="color: white;" type="button" class="login-button btn btn-xs btn-default" title="Log in">
+            <span class="glyphicon glyphicon-log-in"></span> Volver </a></center>
+      </div>
 
 
+    </div>
+
+    <script>
+      fetch("json/jj.json")
+        .then(response => response.json())
+        .then(data => {
+          const mecanicoEspecifico = data[0].mecanicos[2];
 
 
+          let cad = '<tr><th>Contexto de la atencion</th><th>Estado de atencion</th><th>Tipo de atencion</th><th>Dias Habiles de operacion</th><th>Justificacion</th></tr>';
+          for (let atencion of mecanicoEspecifico.atenciones) {
+            cad += `<tr><td>${atencion.detalle}</td>
+                        <td>${atencion.estado_atencion}</td>
+                        <td>${atencion.tipo_opcion}</td>
+                        <td>${atencion.dias_resolucion}</td>
+                        <td>${atencion.justificacion}</td></tr>`;
+          }
+            
+            
+
+          document.getElementById("tabla1").innerHTML = cad;
+        });
+    </script>
 
 
-
-
-     </div>
   </body>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
